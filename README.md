@@ -7,13 +7,13 @@ If your game is not in the default folder (C:/Program Files (x86)/Steam/steamapp
 1. Go to [Releases](https://github.com/Valheim-Brasil/InstaladorVPlus/releases), download the latest version of the installer and run it.
 2. Your antivirus or your browser may accuse the program as harmful to your computer, but this is because I don't put a license on the program, so Windows detects it as unlicensed.
 
-### Detecção automática de diretório padrão
+### Automatic default directory detection
 ![Detecção automática](https://i.imgur.com/vTGH967.png)
 
-### Escolha de diretório e detecção do Valheim.exe
+### Directory selection and detection of Valheim.exe
 ![Escolha de diretório](https://i.imgur.com/DEOVzdc.png)
 
-### Opções de Instalar/Desinstalar/Atualizar
+### Install/Uninstall/Update Options
 ![Opções](https://i.imgur.com/5FubDpX.png)
 
 
