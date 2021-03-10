@@ -1,9 +1,11 @@
 ![ValheimPlus Logo](https://raw.githubusercontent.com/nxPublic/ValheimPlus/master/logo.png)
 
-# Como Usar
+# How to use
 If your game is not in the default folder (C:/Program Files (x86)/Steam/steamapps/common/valheim), you will need to know where it was installed, when you find out, copy the directory by clicking on an empty space in the address bar, and when prompted paste it into CMD using the right mouse button.
 
-# Janela de Interação
+# Interface
+1. Go to [Releases](https://github.com/Valheim-Brasil/InstaladorVPlus/releases), download the latest version of the installer and run it.
+2. Your antivirus or your browser may accuse the program as harmful to your computer, but this is because I don't put a license on the program, so Windows detects it as unlicensed.
 
 ### Detecção automática de diretório padrão
 ![Detecção automática](https://i.imgur.com/vTGH967.png)
@@ -14,9 +16,6 @@ If your game is not in the default folder (C:/Program Files (x86)/Steam/steamapp
 ### Opções de Instalar/Desinstalar/Atualizar
 ![Opções](https://i.imgur.com/5FubDpX.png)
 
-
-1. Go to [Releases](https://github.com/Valheim-Brasil/InstaladorVPlus/releases), download the latest version of the installer and run it.
-2. Your antivirus or your browser may accuse the program as harmful to your computer, but this is because I don't put a license on the program, so Windows detects it as unlicensed.
 
 ### Links Úteis
 ValheimPlus: https://github.com/valheimPlus/ValheimPlus
