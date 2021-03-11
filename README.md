@@ -8,13 +8,13 @@ If your game is not in the default folder (C:/Program Files (x86)/Steam/steamapp
 2. Your antivirus or your browser may accuse the program as harmful to your computer, but this is because I don't put a license on the program, so Windows detects it as unlicensed.
 
 ### Automatic default directory detection
-![Detecção automática](https://i.imgur.com/vTGH967.png)
+![Detecção automática](https://i.imgur.com/dr4pzGW.png)
 
 ### Directory selection and detection of Valheim.exe
-![Escolha de diretório](https://i.imgur.com/DEOVzdc.png)
+![Escolha de diretório](https://i.imgur.com/Escliwt.png)
 
 ### Install/Uninstall/Update Options
-![Opções](https://i.imgur.com/5FubDpX.png)
+![Opções](https://i.imgur.com/2eoMmaR.png)
 
 
 ### Links Úteis
