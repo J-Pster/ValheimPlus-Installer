@@ -113,6 +113,7 @@ namespace ValheimBrasil
 
         public static void SearchingBepInExInstall(string dir)
         {
+            Console.WriteLine("SearchingBepInEx Dir Received: " + dir);
             bool existsbepinex = false;
             bool existsdoorstop = System.IO.File.Exists($"{dir}/doorstop_config.ini");
             bool existswinhttp = System.IO.File.Exists($"{dir}/winhttp.dll");
@@ -203,10 +204,10 @@ namespace ValheimBrasil
                 Console.WriteLine("Usually it stays at: C:/Program Files (x86)/Steam/steamapps/common/valheim");
                 Console.WriteLine("We need you to write the complete directory, without errors.");
                 Console.WriteLine("Which directory is your game in?\n");
-                dirselected = Console.ReadLine();
-                SearchingDirectory(dirselected);
+                string internaldirselected = Console.ReadLine();
+                SearchingDirectory(internaldirselected);
                 Console.Clear();
-                return dirselected;
+                return internaldirselected;
             }
             catch (Exception)
             {
@@ -335,7 +336,7 @@ namespace ValheimBrasil
             }
             else
             { 
-               programa.SelectDirectory();
+                programa.dirselected = programa.SelectDirectory();
             }
 
             //Menu de instalação
