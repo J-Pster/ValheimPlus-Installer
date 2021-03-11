@@ -17,7 +17,7 @@ If your game is not in the default folder (C:/Program Files (x86)/Steam/steamapp
 ![Opções](https://i.imgur.com/2eoMmaR.png)
 
 
-### Links Úteis
+### Util Links
 ValheimPlus: https://github.com/valheimPlus/ValheimPlus
 
 My Discord: $"{CastBlacKing}"#8944
