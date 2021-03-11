@@ -13,7 +13,8 @@ namespace ValheimBrasil
     {
         public string dirgame = "C:/Program Files (x86)/Steam/steamapps/common/valheim";
         public string dirselected = null;
-
+        static Program programa = new Program();
+        
         //
         enum opcao
         {
@@ -81,7 +82,6 @@ namespace ValheimBrasil
                 Console.WriteLine("\nDirectory not found: " + $"'{dir}'");
                 System.Threading.Thread.Sleep(2500);
                 Console.Clear();
-                Program programa = new Program();
                 programa.SelectDirectory();
             }
 
@@ -106,7 +106,6 @@ namespace ValheimBrasil
                 Console.WriteLine("Valheim.Exe was not found, restarting...");
                 System.Threading.Thread.Sleep(4000);
                 Console.Clear();
-                Program programa = new Program();
                 programa.SelectDirectory();
             }
         }
@@ -204,10 +203,10 @@ namespace ValheimBrasil
                 Console.WriteLine("Usually it stays at: C:/Program Files (x86)/Steam/steamapps/common/valheim");
                 Console.WriteLine("We need you to write the complete directory, without errors.");
                 Console.WriteLine("Which directory is your game in?\n");
-                string internaldirselected = Console.ReadLine();
-                SearchingDirectory(internaldirselected);
+                dirselected = Console.ReadLine();
+                SearchingDirectory(dirselected);
                 Console.Clear();
-                return internaldirselected;
+                return dirselected;
             }
             catch (Exception)
             {
@@ -253,9 +252,6 @@ namespace ValheimBrasil
             // Baixando o Core
             try
             {
-                Program programa = new Program();
-                string printdir = programa.dirselected;
-                Console.WriteLine("DirSelected: " + printdir);
                 SearchingBepInExInstall(programa.dirselected);
                 WebClient webClient = new WebClient();
                 Console.WriteLine("\nStarting Download....");
@@ -329,14 +325,13 @@ namespace ValheimBrasil
         public static void Main(string[] args)
         {
             //Chamando o programa
-            Program programa = new Program();
             //Tetando o padrão
             if(programa.TestDefaultDirectory())
             {
             }
             else
             { 
-                programa.dirselected = programa.SelectDirectory();
+                programa.SelectDirectory();
             }
 
             //Menu de instalação
