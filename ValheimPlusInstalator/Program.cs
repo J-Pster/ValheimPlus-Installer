@@ -28,8 +28,8 @@ namespace ValheimBrasil
             Console.WriteLine("========== Valheim+ Installer ==========\n");
             Console.WriteLine("WARNING: THE GAME MUST BE TURNED OFF!");
             Console.WriteLine("Welcome to the BepInEx + ValheimPlus installer");
-            Console.WriteLine("This application is designed to install ValheimPlus, it basically opens a WebClient to download the .zip,\nthen extracts it into the selected folder and deletes the downloaded .zip.\n");
-            Console.WriteLine("This application is MIT, the source code is in the repository: ");
+            Console.WriteLine("This application is designed to install ValheimPlus, it basically opens a WebClient to download the .zip,\nthen extracts it into the selected folder and deletes the downloaded .zip.");
+            Console.WriteLine("This application is MIT, the source code is in the repository: https://github.com/CastBlacKing/ValheimPlus-Installer/\n");
         }
 
         
@@ -255,9 +255,9 @@ namespace ValheimBrasil
                 SearchingBepInExInstall(programa.dirselected);
                 WebClient webClient = new WebClient();
                 Console.WriteLine("\nStarting Download....");
-                webClient.DownloadFile("https://github.com/Valheim-Brasil/VPlus-Brasil/releases/latest/download/ValheimBrasil.zip", "ValheimBrasil.zip");
+                webClient.DownloadFile("https://github.com/valheimPlus/ValheimPlus/releases/latest/download/WindowsClient.zip", "WindowsClient.zip");
                 Console.WriteLine("\nFile downloaded successfully! Extracting file into the game directory...");
-                ZipFile.ExtractToDirectory("ValheimBrasil.zip", $"{Directory.GetCurrentDirectory()}");
+                ZipFile.ExtractToDirectory("WindowsClient.zip", $"{Directory.GetCurrentDirectory()}");
             }
             catch (Exception)
             {
@@ -270,7 +270,7 @@ namespace ValheimBrasil
             // Limpeza de Desnecessários
             System.Threading.Thread.Sleep(2500);
             Console.WriteLine("Deleting Core file .zip");
-            File.Delete("ValheimBrasil.zip");
+            File.Delete("WindowsClient.zip");
             System.Threading.Thread.Sleep(2000);
             Console.Clear();
         }
